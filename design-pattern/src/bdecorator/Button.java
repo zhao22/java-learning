@@ -1,4 +1,4 @@
-package decorator;
+package bdecorator;
 
 public class Button implements Element{
 

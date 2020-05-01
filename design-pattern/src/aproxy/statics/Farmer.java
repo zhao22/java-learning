@@ -1,4 +1,4 @@
-package proxy.statics;
+package aproxy.statics;
 
 public class Farmer implements IStaff{
 

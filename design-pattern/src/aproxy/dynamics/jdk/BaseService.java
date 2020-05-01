@@ -1,4 +1,4 @@
-package proxy.dynamics.jdk;
+package aproxy.dynamics.jdk;
 
 public interface BaseService {
 

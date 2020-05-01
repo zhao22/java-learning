@@ -1,4 +1,4 @@
-package proxy.dynamics.jdk;
+package aproxy.dynamics.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 public class Main {
 
 	public static void main(String[] args) {
-		System.getProperties().setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+//		System.getProperties().setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 		
 		BaseService sleepService = new SleepService();
 		

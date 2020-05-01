@@ -1,4 +1,4 @@
-package adapter.objects;
+package cadapter.objects;
 
 public interface Indicator {
 	 

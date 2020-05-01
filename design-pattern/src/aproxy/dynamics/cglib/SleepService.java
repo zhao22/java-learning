@@ -1,4 +1,4 @@
-package proxy.dynamics.cglib;
+package aproxy.dynamics.cglib;
 
 public class SleepService{
 

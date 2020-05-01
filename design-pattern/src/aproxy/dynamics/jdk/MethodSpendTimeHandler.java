@@ -1,4 +1,4 @@
-package proxy.dynamics.jdk;
+package aproxy.dynamics.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

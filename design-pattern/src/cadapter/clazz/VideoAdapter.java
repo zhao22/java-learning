@@ -1,4 +1,4 @@
-package adapter.clazz;
+package cadapter.clazz;
 
 public class VideoAdapter extends HDMIAdaptee implements Indicator{
 

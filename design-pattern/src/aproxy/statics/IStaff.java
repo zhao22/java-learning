@@ -1,4 +1,4 @@
-package proxy.statics;
+package aproxy.statics;
 
 public interface IStaff {
 
