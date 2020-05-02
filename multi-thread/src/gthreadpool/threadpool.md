@@ -1,0 +1,16 @@
+ThreadPool的Demo中一共有两个文件:
+ThreadPool 是一个线程池的接口，暴露了线程池具备的五种功能。
+
+DefaultThreadPool是 ThreadPool的实现类:
+
+其中Worker是Runnable的实现类，线程池中实际处理任务的类:
+
+Worker在 run() 方法中处理传入的工作，如果当前没有工作，处于wait状态。
+（此处使用synchronized锁住jobs是怕在判断jobs.isEmpty时存在线程安全问题，多个线程同时认为最后一个工作属于自己）。
+
+如果有工作，那么取出最先的工作调用run方法。
+
+当然，Worker也可以使用shutdown停止工作，使用synchronized可以保证shutdown时置false的running能立刻被run中读取到，但shutdown时，
+还是会等到工作执行完成才真正停止线程。
+
+worker使用Collections.syncrhonizedList锁住LinkedList实现，可以使removeFirst和addLast时，不存在线程安全问题。
